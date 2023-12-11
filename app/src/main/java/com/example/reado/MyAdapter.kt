@@ -31,7 +31,7 @@ class MyAdapter(private val context: Context, private val listener: NewsItemClic
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val currentItem = items[position]
         holder.newsTitle.text = currentItem.title
-        holder.newsAbstract.text = currentItem.abstract
+        holder.newsDescription.text = currentItem.description
         holder.newsAuthorName.text = currentItem.author
         Glide.with(context).load(currentItem.imageUrl).into(holder.newsImage)
     }
@@ -51,7 +51,7 @@ class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
 //    val title : TextView = binding.tvTitle
     val newsImage : ImageView = binding.ivNewsImage
     val newsTitle : TextView = binding.tvTitle
-    val newsAbstract : TextView = binding.tvAbstract
+    val newsDescription : TextView = binding.tvDescription
     val newsAuthorName : TextView = binding.tvAuthorName
 }
 

@@ -1,7 +1,7 @@
 package com.example.reado
 
 data class NewsApiAttributes (
-    val abstract : String,
+    val description : String,
     val title : String,
     val url : String,
     val imageUrl: String,
