@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Reado</string>
+    <string name="News_Selection">What do you want to read ?</string>
+    <string name="MostEmailedArticles">Most Emailed Articles</string>
+    <string name="MostSharedArticles">Most Shared Articles</string>
+    <string name="MostViewedArticles">Most Viewed Articles</string>
 </resources>
